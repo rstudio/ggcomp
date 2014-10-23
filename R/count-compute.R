@@ -5,7 +5,7 @@
 #' @param x_var,w_var Names of x and weight variables.
 #' @seealso \code{\link{compute_bin}} For counting cases within ranges of
 #'   a continuous variable.
-# @seealso \code{\link{compute_align}} For calculating the "width" of data.
+#' @seealso \code{\link{compute_align}} For calculating the "width" of data.
 #' @export
 #' @examples
 #' mtcars %>% compute_count(~cyl)

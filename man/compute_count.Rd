@@ -28,5 +28,7 @@ pressure \%>\% compute_count(~temperature, ~pressure)
 \seealso{
 \code{\link{compute_bin}} For counting cases within ranges of
   a continuous variable.
+
+\code{\link{compute_align}} For calculating the "width" of data.
 }
 
