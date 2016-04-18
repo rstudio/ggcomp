@@ -6,175 +6,133 @@
 using namespace Rcpp;
 
 // abs_max_
-double abs_max_(const NumericVector& x, const bool finite = true);
+double abs_max_(const NumericVector& x, const bool finite);
 RcppExport SEXP gggeom_abs_max_(SEXP xSEXP, SEXP finiteSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP );
-        Rcpp::traits::input_parameter< const bool >::type finite(finiteSEXP );
-        double __result = abs_max_(x, finite);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP);
+    Rcpp::traits::input_parameter< const bool >::type finite(finiteSEXP);
+    __result = Rcpp::wrap(abs_max_(x, finite));
+    return __result;
 END_RCPP
 }
 // dp_distance
 NumericVector dp_distance(const NumericVector& x, const NumericVector& y);
 RcppExport SEXP gggeom_dp_distance(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP );
-        Rcpp::traits::input_parameter< const NumericVector& >::type y(ySEXP );
-        NumericVector __result = dp_distance(x, y);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP);
+    Rcpp::traits::input_parameter< const NumericVector& >::type y(ySEXP);
+    __result = Rcpp::wrap(dp_distance(x, y));
+    return __result;
 END_RCPP
 }
 // make_heap
 List make_heap(NumericVector x);
 RcppExport SEXP gggeom_make_heap(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP );
-        List __result = make_heap(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(make_heap(x));
+    return __result;
 END_RCPP
 }
 // heap_sort
 NumericVector heap_sort(NumericVector x);
 RcppExport SEXP gggeom_heap_sort(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP );
-        NumericVector __result = heap_sort(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(heap_sort(x));
+    return __result;
 END_RCPP
 }
 // heap_update_sort
 List heap_update_sort(NumericVector x);
 RcppExport SEXP gggeom_heap_update_sort(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP );
-        List __result = heap_update_sort(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(heap_update_sort(x));
+    return __result;
 END_RCPP
 }
 // resolution_numeric
-double resolution_numeric(NumericVector x, bool zero = true);
+double resolution_numeric(NumericVector x, bool zero);
 RcppExport SEXP gggeom_resolution_numeric(SEXP xSEXP, SEXP zeroSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP );
-        Rcpp::traits::input_parameter< bool >::type zero(zeroSEXP );
-        double __result = resolution_numeric(x, zero);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< bool >::type zero(zeroSEXP);
+    __result = Rcpp::wrap(resolution_numeric(x, zero));
+    return __result;
 END_RCPP
 }
 // buildSkyline
 List buildSkyline(NumericVector x1, NumericVector x2, NumericVector y);
 RcppExport SEXP gggeom_buildSkyline(SEXP x1SEXP, SEXP x2SEXP, SEXP ySEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x1(x1SEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type x2(x2SEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type y(ySEXP );
-        List __result = buildSkyline(x1, x2, y);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x1(x1SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type x2(x2SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y(ySEXP);
+    __result = Rcpp::wrap(buildSkyline(x1, x2, y));
+    return __result;
 END_RCPP
 }
 // stack_rects
 List stack_rects(NumericVector x1, NumericVector x2, NumericVector y1, NumericVector y2);
 RcppExport SEXP gggeom_stack_rects(SEXP x1SEXP, SEXP x2SEXP, SEXP y1SEXP, SEXP y2SEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x1(x1SEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type x2(x2SEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type y1(y1SEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type y2(y2SEXP );
-        List __result = stack_rects(x1, x2, y1, y2);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x1(x1SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type x2(x2SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y1(y1SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y2(y2SEXP);
+    __result = Rcpp::wrap(stack_rects(x1, x2, y1, y2));
+    return __result;
 END_RCPP
 }
 // stack_ribbons
 List stack_ribbons(ListOf<NumericVector> x, ListOf<NumericVector> y1, ListOf<NumericVector> y2);
 RcppExport SEXP gggeom_stack_ribbons(SEXP xSEXP, SEXP y1SEXP, SEXP y2SEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< ListOf<NumericVector> >::type x(xSEXP );
-        Rcpp::traits::input_parameter< ListOf<NumericVector> >::type y1(y1SEXP );
-        Rcpp::traits::input_parameter< ListOf<NumericVector> >::type y2(y2SEXP );
-        List __result = stack_ribbons(x, y1, y2);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< ListOf<NumericVector> >::type x(xSEXP);
+    Rcpp::traits::input_parameter< ListOf<NumericVector> >::type y1(y1SEXP);
+    Rcpp::traits::input_parameter< ListOf<NumericVector> >::type y2(y2SEXP);
+    __result = Rcpp::wrap(stack_ribbons(x, y1, y2));
+    return __result;
 END_RCPP
 }
 // ungroupNA
 NumericVector ungroupNA(ListOf<NumericVector> x);
 RcppExport SEXP gggeom_ungroupNA(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< ListOf<NumericVector> >::type x(xSEXP );
-        NumericVector __result = ungroupNA(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< ListOf<NumericVector> >::type x(xSEXP);
+    __result = Rcpp::wrap(ungroupNA(x));
+    return __result;
 END_RCPP
 }
 // as_data_frame
 void as_data_frame(List x, int nrow);
 RcppExport SEXP gggeom_as_data_frame(SEXP xSEXP, SEXP nrowSEXP) {
 BEGIN_RCPP
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< List >::type x(xSEXP );
-        Rcpp::traits::input_parameter< int >::type nrow(nrowSEXP );
-        as_data_frame(x, nrow);
-    }
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< List >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type nrow(nrowSEXP);
+    as_data_frame(x, nrow);
     return R_NilValue;
 END_RCPP
 }
@@ -182,34 +140,26 @@ END_RCPP
 NumericVector vw_distance(const NumericVector& x, const NumericVector& y);
 RcppExport SEXP gggeom_vw_distance(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP );
-        Rcpp::traits::input_parameter< const NumericVector& >::type y(ySEXP );
-        NumericVector __result = vw_distance(x, y);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector& >::type x(xSEXP);
+    Rcpp::traits::input_parameter< const NumericVector& >::type y(ySEXP);
+    __result = Rcpp::wrap(vw_distance(x, y));
+    return __result;
 END_RCPP
 }
 // warp
-List warp(NumericVector x, NumericVector y, std::string f, double threshold = 0.01, bool closed = false);
+List warp(NumericVector x, NumericVector y, std::string f, double threshold, bool closed);
 RcppExport SEXP gggeom_warp(SEXP xSEXP, SEXP ySEXP, SEXP fSEXP, SEXP thresholdSEXP, SEXP closedSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type y(ySEXP );
-        Rcpp::traits::input_parameter< std::string >::type f(fSEXP );
-        Rcpp::traits::input_parameter< double >::type threshold(thresholdSEXP );
-        Rcpp::traits::input_parameter< bool >::type closed(closedSEXP );
-        List __result = warp(x, y, f, threshold, closed);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type y(ySEXP);
+    Rcpp::traits::input_parameter< std::string >::type f(fSEXP);
+    Rcpp::traits::input_parameter< double >::type threshold(thresholdSEXP);
+    Rcpp::traits::input_parameter< bool >::type closed(closedSEXP);
+    __result = Rcpp::wrap(warp(x, y, f, threshold, closed));
+    return __result;
 END_RCPP
 }

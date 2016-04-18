@@ -6,7 +6,7 @@
 #'
 #' @inheritParams geometry_flip
 #' @param fun A warping function to use. Currently these are hard coded
-#'   because they much be implemented in C++ for performance reasons.
+#'   because they must be implemented in C++ for performance reasons.
 #' @param tolerance Approximation errors below this threshold will be
 #'   ignored. If \code{NULL}, attempts to guess a reasonable value.
 #' @export

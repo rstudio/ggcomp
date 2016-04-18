@@ -6,7 +6,7 @@
 \alias{histogram_ex}
 \alias{nz}
 \alias{scatter_ex}
-\title{Various dataset to use for exmaples}
+\title{Various dataset to use for examples}
 \format{Data frames.}
 \usage{
 bar_ex
@@ -18,7 +18,7 @@ histogram_ex
 nz
 }
 \description{
-Various dataset to use for exmaples
+Various dataset to use for examples
 }
 \keyword{datasets}
 \keyword{internal}
