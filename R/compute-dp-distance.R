@@ -9,13 +9,13 @@
 #' more details.
 #'
 #' Note that this function does not do any simplification - it just adds an
-#' additional column the measures the distaince between each point and it
+#' additional column the measures the distance between each point and its
 #' subline. Filtering on this column will perform simplification.
 #'
 #' @param data A data frame like object.
 #' @param x_var,y_var Formulas specifying either variable names or
 #'   expressions to use as x and y positions.
-#' @seealso \code{\link{geometry_simplify}()} for an function that works on
+#' @seealso \code{\link{geometry_simplify}()} for any function that works on
 #'   a geometry and does simplification given tolerance or percentage of
 #'   points to keep.
 #' @return A data frame with columns:

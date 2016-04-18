@@ -1,4 +1,4 @@
-#' Various dataset to use for exmaples
+#' Various dataset to use for examples
 #'
 #' @keywords internal
 #' @format Data frames.

@@ -1,4 +1,4 @@
-#' Rotate a geometry about a pointclockwise, by a specified angle
+#' Rotate a geometry about a point clockwise, by a specified angle
 #'
 #' Rotate a geometry about a point clockwise, by a specified angle.
 #'

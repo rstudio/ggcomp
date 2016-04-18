@@ -16,7 +16,7 @@ options(digits = 3)
 
 ## Motivation
 
-The goal of gggeom is to provide a compact way to represent geometric objects and useful tools to wrok with them. This package is (or soon will be) used to power ggvis: if you want to create a new layer function, you'll need to be somewhat familiar with this package. But gggeom is low-level and is not tightly tied to ggvis so you could use it to implement a new graphics system if you wanted.
+The goal of gggeom is to provide a compact way to represent geometric objects and useful tools to work with them. This package is (or soon will be) used to power ggvis: if you want to create a new layer function, you'll need to be somewhat familiar with this package. But gggeom is low-level and is not tightly tied to ggvis so you could use it to implement a new graphics system if you wanted.
 
 The objects in gggeom are somewhat similar to the geoms of ggplot2, but gggeom has a much purer take on geometric primitives. For example, ggplot2 has the `geom_histogram()` which is really a combination of a statistical transformation (`stat_bin()`) and a bar (`geom_bar()`). gggeom avoids this muddle, sticking purely to geometric objects. It also provides many more tools for manipulating geometries, indepedent of the particular plot they will eventually generate. The data structures in gggeom are all built on top of data frames, which mean that you can use many existing tools.
 
@@ -41,7 +41,7 @@ However, because these primitives are so general, it is hard to define useful op
   ${(x_{1}, [y_{11}, y_{12}]), ..., (x_n, [y_{n1}, y_{n2}])}$, 
   where $x_i < x_{i+1}$
 
-Geometries are described in turns of their position. When rendered a geometric object will need other properties (like stroke, fill, stroke width, ...) but gggeom concerns itself only computations that involve position.
+Geometries are described in terms of their position. When rendered a geometric object will need other properties (like stroke, fill, stroke width, ...) but gggeom concerns itself only computations that involve position.
 
 A geometry is represented as a data frame, where each row corresponds to a single object. You turn a data frame into a geometry using the appropriate render function:
 
@@ -50,7 +50,7 @@ scatter <- iris %>% render_point(~Sepal.Length, ~Sepal.Width) %>% head()
 scatter
 ```
 
-The default behaviour of the render function preserve all existing columms so that they can be later mapped to other properties of the geometry. However, this is mostly incidental to gggeom - it only works with the position columns (which all end in `_` to avoid clashes with other vars).
+The default behaviour of the render function is to preserve all existing columms so that they can be later mapped to other properties of the geometry. However, this is mostly incidental to gggeom - it only works with the position columns (which all end in `_` to avoid clashes with other vars).
 
 All geometries inherit from "geom" and "data.frame". Additional subclassing is based not on the appearance of the geom but on the underlying position data. This means that:
 
